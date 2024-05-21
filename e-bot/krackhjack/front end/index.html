@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kj shopping website</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;  
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('e.jpg'); /* Add the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            height: 1100px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 0;
+            
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+            margin-top: 89px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            clear: both;
+        }
+        iframe{
+            margin-left: 6px;
+            margin-top: 4px;
+            margin-right: 20px;
+            margin-bottom: 60px;
+        }
+        
+    </style>
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        .modal-content {
+            
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            height: 530px;
+            border: 1px solid #ff0000;
+            width: 400px; /* Could be more or less, depending on screen size */
+        }
+        /* Background video container */
+.modal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('helloo.mp4') center center / cover no-repeat;
+    opacity: 0.5; /* Adjust opacity as needed */
+    z-index: -1; /* Place the video behind the modal content */}
+
+        .close {
+            color: #00fbff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: rgb(250, 255, 249);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .bot-icon{
+            margin-left: 1400px;
+            margin-top: 300px;
+            display:flex;
+            width: 100px;
+            height: 60px;
+        }
+
+       
+        /* Avatar Button */
+        .avatar-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin-left:1360px;
+            margin-top :70px;
+        }
+
+.avatar-btn img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;}
+    
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Your navigation bar here -->
+</div>
+
+<div class="bot_icon">
+    <!-- Your main content here -->
+    <button id="avatarBtn" class="avatar-btn" placeholder="chat with us">
+        <img src="98.avif" alt="chat with us">
+        <link rel="stylesheet" href="styles.css">
+        
+    </button>
+</div>
+
+<!-- The Modal -->
+<div id="chatModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Chat bot iframe or script here -->
+        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/ea55068c-562e-4590-a8c2-4dcde6639b1b"></iframe>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+</head>
+<body>
+    
+</html>
